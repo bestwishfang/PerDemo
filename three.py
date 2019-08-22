@@ -27,7 +27,7 @@ while True:
     try:
         recv = shell.recv(1024).decode()
         if recv:
-            print(recv,end='')
+            print(recv, end='')
         else:
             continue
     except:
