@@ -15,7 +15,8 @@ conn = pymysql.connect(host='127.0.0.1',
 cursor = conn.cursor()
 
 # sql = "select * from good;"
-sql = "insert into good(name,num,price) values('鱿鱼',12,25);"
+# sql = "insert into good(name,num,price) values('鱿鱼',12,25);"
+sql = "select name, num, price from good;"
 row = cursor.execute(sql)
 conn.commit()
 
