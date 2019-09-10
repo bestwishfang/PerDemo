@@ -6,3 +6,7 @@ echo "Hello Shell"
 
 read -p "what's your name ?" name
 echo -e "Your name: " $name
+
+
+read -p "Are you OK?" answer
+echo -e $answer
