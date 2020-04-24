@@ -1,10 +1,4 @@
 # Fang
 coding start ...
 
-use https ...
-
-use ssh ...
-
-use pymysql
-
-use paramiko
+three years aga, I don't know what will being?
