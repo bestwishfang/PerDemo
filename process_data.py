@@ -92,9 +92,9 @@ def process_park(series):
     new_series = pd.Series()
     for index, string in series.items():
         if pattern.match(string).group() == 'NF':
-            new_series[index] = string
+            new_series[index] = 'NF'
         else:
-            new_series[index] = pattern.sub('BF', string)
+            new_series[index] = 'BF'
 
     return new_series
 
