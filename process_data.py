@@ -78,6 +78,8 @@ def process_dev_col(data):
 
     des_alnum_index = get_alnum_index(data['DesTwo'].values)
     data.loc[des_alnum_index, 'DesDev'] = process_alnum(data.loc[des_alnum_index, ['DesOne', 'DesTwo']])
+    
+    return data
 
 
 def judge_sou_des(series):
@@ -107,7 +109,7 @@ def main():
     data[['SouPark', 'SouOne', 'SouTwo']] = re_split_col(data['SouDev'].values)
     data[['DesPark', 'DesOne', 'DesTwo']] = re_split_col(data['DesDev'].values)
 
-    process_dev_col(data)
+    data = process_dev_col(data)
 
     sou_des_index = data[['SouDev', 'DesDev']].apply(func=judge_sou_des, axis=1)
     if np.any(sou_des_index):
