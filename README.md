@@ -1,4 +1,6 @@
 # Fang
 coding start ...
 
-three years aga, I don't know what will being?
+three years ago, I don't know what will being?
+always in vain ...
+
