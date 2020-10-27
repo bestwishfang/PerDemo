@@ -7,29 +7,31 @@ import os
 """
 仿真环境配置管理口脚本
 
-前提：
-1、Linux执行机python 已安装，版本 3.5+
-2、Linux执行机上ssh 公钥和私钥已生成，且是3072位
-   密钥生成命令 ssh-keygen -t rsa -b 3072
+前提条件：
+1、Linux执行机username: root, password: root
+2、Linux执行机python 已安装，版本 3.5+，pip 正常使用
+3、Linux执行机ssh 公钥和私钥已生成，且是3072位，公钥路径：/root/.ssh/id_rsa.pub
+
+备注：
+ssh 密钥生成命令 ssh-keygen -t rsa -b 3072
 """
 
+import_flag = True
+while import_flag:
+    try:
+        import pytest
+        import pytest_testlib_base
+    except ImportError as err:
+        print('err:', err)
+        print('err name：', err.name)
+        if err.name == 'pytest_testlib_base':
+            os.system('pip install pytest-testlib-base -i http://10.247.195.169/simple/')
+        else:
+            os.system('pip install {} -i http://cmc-cd-mirror.rnd.huawei.com/pypi/simple/'.format(err.name))
+    else:
+        import_flag = False
 
 if __name__ == '__main__':
-    import_flag = True
-    while import_flag:
-        try:
-            import pytest
-            import pytest_testlib_base
-        except ImportError as err:
-            print('err:', err)
-            print('err name：', err.name)
-            if err.name == 'pytest_testlib_base':
-                os.system('pip install pytest-testlib-base -i http://10.247.195.169/simple/')
-            else:
-                os.system('pip install {} -i http://cmc-cd-mirror.rnd.huawei.com/pypi/simple/'.format(err.name))
-        else:
-            import_flag = False
-
     pytest_fp = os.popen('find / -name pytest')
     pytest_path = pytest_fp.readline()
     if '/usr/' in pytest_path and '/pytest' in pytest_path:
@@ -103,8 +105,8 @@ def set_mange_port(ne):
         'protocol inbound all',
         'user privilege level 3',
         'quit',
-        'ssh ipv4 server port 10022',
-        'ssh ipv6 server port 10022',
+        'ssh ipv4 server port 15000',
+        'ssh ipv6 server port 15000',
         'ssh user root',
         'ssh user root authentication-type rsa',
         'ssh user root assign rsa-key abcd',
@@ -139,7 +141,7 @@ def test_set_manage_port():
     set_mange_port(ne)
     try:
         ne.relogin()
-        cmd = f'ssh -o StrictHostKeyChecking=no {master_ip} -p 10022'
+        cmd = f'ssh -o StrictHostKeyChecking=no {master_ip} -p 15000'
         ret = ne.sendcmd(cmd, endflags=('<HUAWEI>',), timeout=20)
     except Exception as err:
         Log.log(err)
