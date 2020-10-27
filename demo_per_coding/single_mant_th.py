@@ -19,7 +19,8 @@ class Singleton:
     def __new__(cls, *args, **kwargs):
         if cls.__lock.acquire():
             if not cls.__instance:
-                cls.__instance = object.__new__(cls)
+                cls.__instance = super(Singleton, cls).__new__(cls, *args, **kwargs)
+                # cls.__instance = object.__new__(cls, *args, **kwargs)
             cls.__lock.release()
             return cls.__instance
 
