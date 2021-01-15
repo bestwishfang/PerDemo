@@ -1,0 +1,28 @@
+{
+  "user": "fang",
+  "frame": "pytest",
+  "work_dir": "",
+  "repository": "git@github.com:bestwishfang/AutoUse.git",
+  "cases": {
+    "test_one": {
+      "name": "test_one.py",
+      "description": "",
+      "case_path": "cases/Interface/test_one.py"
+    },
+    "test_sec": {
+      "name": "test_sec.py",
+      "description": "",
+      "case_path": "cases/Interface/test_sec.py"
+    },
+    "test_webui_sec": {
+      "name": "test_webui_sec.py",
+      "description": "",
+      "case_path": "cases/WebUI/test_webui_sec.py"
+    },
+    "test_webui_thr": {
+      "name": "test_webui_thr.py",
+      "description": "",
+      "case_path": "cases/WebUI/test_webui_thr.py"
+    }
+  }
+}
