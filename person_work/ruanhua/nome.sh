@@ -1,12 +1,3 @@
-echo "New Starting..."
-# pytest.ini
-[pytest]
-addopts =
-python_files = 
-python_functions = 
-python_classes = 
-
-
 #!/bin/bash
 systemctl start docker.service
 systemctl start smb.service

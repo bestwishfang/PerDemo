@@ -1,0 +1,16 @@
+# note person some
+
+Python系统维护着一个常见的“整数常量池”即 -5 ~ 255
+
+# Linux 查看文件属性
+lsattr
+chattr
+
+# windows gitbash use 'python' command
+vim ~/.bashrc
+alias python="winpty python.exe"
+
+lsmod                 # 查看载入的模块
+modprobe xxx.ko       # 加载某个模块
+modprobe -r xxx.ko    # 卸载某个模块
+

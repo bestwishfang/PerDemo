@@ -1,2 +1,39 @@
-Python 垃圾回收机制
+# 记录一些容易忽视的问题
+
+
+1、Python 垃圾回收机制
+
+https://blog.csdn.net/qq_27825451/article/details/82849734
+什么是内存管理和垃圾回收
+Python GC主要使用引用计数（reference counting）来跟踪和回收垃圾。
+在引用计数的基础上，通过“标记-清除”（mark and sweep）解决容器对象可能产生的循环引用问题，
+通过“分代回收”（generation collection）以空间换时间的方法提高垃圾回收效率。
+
+现在的高级语言如java，c#等，都采用了垃圾收集机制，而不再是c，c++里用户自己管理维护内存的方式。
+自己管理内存极其自由，可以任意申请内存，但如同一把双刃剑，为大量内存泄露，悬空指针等bug埋下隐患。
+对于一个字符串、列表、类甚至数值都是对象，且定位简单易用的语言，自然不会让用户去处理如何分配回收内存的问题。
+python里也同java一样采用了垃圾收集机制，不过不一样的是:
+
+最关键的一句话：
 python采用的是引用计数机制为主，标记-清除和分代收集两种机制为辅的策略
+
+
+2、Python 如何执行C 语言代码
+
+
+3、Flask 蓝图模式
+
+    使用蓝图可以分为三个步骤
+    from flask import Blueprint
+    1,创建一个蓝图对象
+    admin = Blueprint('admin', __name__， url_prefix='/admin')
+
+    2,在这个蓝图对象上进行操作,注册路由,指定静态文件夹,注册模版过滤器
+    @admin.route('/')
+    def admin_home():
+        return 'admin_home'
+
+    3,在Flask 对象上注册这个Blueprint对象
+    app.register_blueprint(admin)
+    当这个应用启动后,通过/admin/可以访问到蓝图中定义的视图函数
+
