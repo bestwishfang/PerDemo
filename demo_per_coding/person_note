@@ -1,0 +1,12 @@
+登录mysql mysql -u root -p 或 mysql
+
+use mysql;
+update user set authentication_string=PASSWORD("密码") where user='root'; MySQL 版本5.7 以下
+update user set plugin="mysql_native_password";
+flush privileges;
+exit;
+
+service mysql restart;
+
+
+update user set password=PASSWORD("密码") where user='root';
