@@ -1,0 +1,71 @@
+{
+    "title": "15570-MMO+FPS游戏高级技术美术（深圳）",
+    "location": "深圳",
+    "last_update_time": "2019年10月23日",
+    "url": "http://careers.tencent.com/jobdesc.html?postId=1125297810418176000",
+    "requirement": "三年以上3D游戏引擎（程序或美术）开发经验，熟悉Unity或者Unreal 引擎； \n精通3D Max Maya Photoshop Zbrush等美术工具，能开发相关工具插件； \n了解游戏引擎中各类美术表现需求的实现原理，熟悉渲染管线、熟悉Shader编程，了解编程原理和程序基本结构，会使用如Python，C#等语言。",
+    "responsibility": "美术工具开发以及制作流程优化，以便于提升美术制作效率；\n根据美术要求，预研相关效果，并且协助美术进行效果调优；\n跟进美术制作规范，协同美术和程序进行游戏性能优化。"
+}{
+    "title": "25923-Python高级工程师（上海）",
+    "location": "上海",
+    "last_update_time": "2019年10月12日",
+    "url": "http://careers.tencent.com/jobdesc.html?postId=1123175931045744640",
+    "requirement": "计算机相关专业本科及以上学历，3年以上后台开发经验；\n精通Python，3年以上Python后台开发经验，有良好的编码习惯；\n精通Python服务端编程，精通网络编程；\n熟悉Django/Tornado等web开发框架；\n熟悉大型分布式系统设计与开发，并具备MQ、NoSQL实战经验；\n熟悉Unix/Linux操作系统下的开发，部署，维护等工作；\n有Google Cloud Platform、IBM Bluemix、AWS使用经验者优先；\n有Cloud Foundry、ConPaaS等开源PaaS云平台开发经验者优先；\n具备良好的分析解决问题能力和团队合作能力；\n具有良好的学习能力，对互联网的新技术有很强的求知欲望；\n有激情，热爱Python，关注用户体验。",
+    "responsibility": "负责腾讯蓝鲸PaaS后台设计与开发；\n负责腾讯游戏运维支撑相关重点SaaS后台设计与开发；\n负责腾讯蓝鲸容器管理平台产品后台设计与开发。"
+}{
+    "title": "25923-Python高级工程师（深圳）",
+    "location": "深圳",
+    "last_update_time": "2019年10月12日",
+    "url": "http://careers.tencent.com/jobdesc.html?postId=1123175387476529152",
+    "requirement": "计算机相关专业本科及以上学历，3年以上后台开发经验；\r\n精通Python，3年以上Python后台开发经验，有良好的编码习惯；\r\n精通Python服务端编程，精通网络编程；\r\n熟悉Django/Tornado等web开发框架；\r\n熟悉大型分布式系统设计与开发，并具备MQ、NoSQL实战经验；\r\n熟悉Unix/Linux操作系统下的开发，部署，维护等工作；\r\n有Google Cloud Platform、IBM Bluemix、AWS使用经验者优先；\r\n有Cloud Foundry、ConPaaS等开源PaaS云平台开发经验者优先；\r\n具备良好的分析解决问题能力和团队合作能力；\r\n具有良好的学习能力，对互联网的新技术有很强的求知欲望；\r\n有激情，热爱Python，关注用户体验。",
+    "responsibility": "负责腾讯蓝鲸PaaS后台设计与开发；\r\n负责腾讯游戏运维支撑相关重点SaaS后台设计与开发；\r\n负责腾讯蓝鲸容器管理平台产品后台设计与开发。"
+}{
+    "title": "25923-数据分析平台开发工程师（Python）（深圳）",
+    "location": "深圳",
+    "last_update_time": "2019年09月26日",
+    "url": "http://careers.tencent.com/jobdesc.html?postId=1177067264646582272",
+    "requirement": "精通Python，3年以上Python后台开发经验，有良好的编码习惯；\r\n熟悉Unix/Linux操作系统下的开发、部署、维护等工作；\r\n精通Python服务端编程，精通网络编程；\r\n熟悉大型分布式系统设计与开发，并有MQ、NoSQL实战经验；\r\n有数据平台元数据管理、数据质量监控研发经验者优先；\r\n有大数据分析/BI/OLAP后台系统研发经验者优先；\r\n具备优秀的沟通能力、学习能力、分析解决问题能力；\r\n具有高度的责任心和团队合作精神。",
+    "responsibility": "参与腾讯游戏数据平台元数据管理系统的开发；\r\n参与腾讯游戏数据平台数据质量、数据流监控的开发；\r\n参与腾讯游戏数据平台数据分析模块的开发。"
+}{
+    "title": "25923-Python后台研发工程师（深圳）",
+    "location": "深圳",
+    "last_update_time": "2019年08月14日",
+    "url": "http://careers.tencent.com/jobdesc.html?postId=1161635128967958528",
+    "requirement": "熟悉python语言，及web开发框架，有3年以上Python开发经验微服务架构和原理；\n熟悉大型分布式系统设计与开发，并具备MQ、NoSQL实战经验，有独立的系统实现能力；\n了解metrics监控指标和相关监控告警系统的开发\n了解数据分析、数据挖掘、机器学习至少一个领域的专业知识，有数据仓库和用户画像挖掘等相关经验；\n熟悉pandas，使用过tensorflow进行机器学习分析；\n熟悉spark，hadoop等开发框架及工具；\n具备良好的分析解决问题能力和团队合作能力。",
+    "responsibility": "负责腾讯运营安全微服务架构平台开发；\n负责腾讯运营安全海外平台开发；\n负责腾讯运营安全策略引擎开发。"
+}{
+    "title": "TME-腾讯音乐python开发工程师（深圳）",
+    "location": "深圳",
+    "last_update_time": "2019年09月23日",
+    "url": "http://careers.tencent.com/jobdesc.html?postId=1163296010936520704",
+    "requirement": "本科及以上学历，2年及以上相关工作经验；\n精通python，熟悉linux平台, 熟悉c++/javascript/html语言编程优先，有前端经验者优先；\n对数据结构和算法设计有较为深刻的理解；\n熟悉分布式系统架构、高并发网络模型；\n有spider、协议逆向分析、反爬虫相关经验者优先；\n优秀的分析问题和解决问题的能力，对解决具有挑战性问题充满激情；\n具有良好的沟通能力，和良好的团队合作精神。",
+    "responsibility": "负责音乐spider服务架构的设计和开发工作；\n设计各种策略和算法，提升spider的抓取效果；\n分析spider的技术缺陷，对spider做出合理地调整或改进；\n研究各种网站、网页、链接的形态，发现它们的特点和规律。"
+}{
+    "title": "25923-监控系统开发工程师（Python）（深圳）",
+    "location": "深圳",
+    "last_update_time": "2019年09月30日",
+    "url": "http://careers.tencent.com/jobdesc.html?postId=1178502235433209856",
+    "requirement": "大学本科及以上学历，计算机或者相关专业，3年以上工作经验；\n精通Python（会Go语言更佳），2年以上Python后台开发经验，有良好的编码习惯；\n熟悉Django/Tornado等web开发框架，了解HTTP协议以及restful api；\n熟悉celery等异步框架；\n熟悉Unix/Linux操作系统下的开发，部署，维护等工作，熟悉大型分布式系统设计与开发；\n熟悉业界时序数据库，influxdb，opentsdb等，熟悉业界监控产品，zabbix，Prometheus等；\n熟悉git flow工作流；\n具有良好的沟通能力、学习能力、分析解决问题能力，高度的责任心和团队合作精神。",
+    "responsibility": "负责腾讯游戏监控告警平台后的设计与开发；\n负责监控自有链路采集与采集器框架开发功能；\n参与代码评审和代码开源改造。"
+}{
+    "title": "TEG02-python开发工程师",
+    "location": "深圳",
+    "last_update_time": "2019年09月26日",
+    "url": "http://careers.tencent.com/jobdesc.html?postId=1177069667957608448",
+    "requirement": "计算机或相关专业本科及以上，并具有3年以上Python开发经验；\n熟练使用Python常用的Django、Tornado、Celery等主流框架，对eventlet等协程开发有深入理解，熟悉Restful API；\n掌握分布式及微服务设计理念，熟悉Kafka、ES、redis等开源中间件；\n良好的编程习惯，追求极致的代码品质，熟悉常用设计模式和软件系统的开发流程；\n能够独立完成工作，具有较强团队协作思维，综合分析问题及解决问题的能力；",
+    "responsibility": "负责网络运营DevOps平台的规划设计及开发维护，参与开发文档撰写、代码编写、调试维护等工作，并协助其他开发人员解决技术问题；\n深入理解业务需求，并与运营人员共同对业务模型进行汇总提炼，参与系统建模工作；\n在保障系统的稳定性，可维护性的基础上，快速响应业务需求；"
+}{
+    "title": "32271-增长策略产品经理（广告系统方向）",
+    "location": "北京",
+    "last_update_time": "2019年10月23日",
+    "url": "http://careers.tencent.com/jobdesc.html?postId=1182229259981164544",
+    "requirement": "本科以上学历，具备3年以上互联网产品工作经验,熟悉产品设计和用户交互工作流程；\n思维逻辑清晰，数据分析能力优秀，善于用数据驱动产品的优化升级；\n具有社交、社区、视频等相关工作经验优先；\n善于思考， 善于沟通和团队协作；\n熟练使用 SQL 进行数据地查询与处理，有研发或数据分析背景优先； \n能快速理解业务，发掘业务细节和数据之间的联系； \n思维活跃，注重细节，关注从创意到执行的全过程； \n掌握 Tableau/R/Python 等分析工具尤佳；\n熟悉增长黑客(Growth Hacking)者优先",
+    "responsibility": "数据驱动，参与目标的制定与拆分，负责腾讯视频的用户增长、留存、拉新、转化、ARPU 提升等产品设计，策略制定工作。 \n与设计、开发人员高效合作，从产品概念策划到推动开发上线中起到关键角色，对增长目标负责。 \n与运营、市场人员紧密配合， 推动营销策略的实施,发现助力业务拓展的机会点\n对所负责的项目进行数据跟踪与数据分析，并结合客户研究及竞品调研，找到对应的提升方案。"
+}{
+    "title": "TEG13-python爬虫开发工程师",
+    "location": "深圳",
+    "last_update_time": "2019年10月02日",
+    "url": "http://careers.tencent.com/jobdesc.html?postId=1158222216970637312",
+    "requirement": "1、计算机相关专业本科以上学历，熟悉linux平台开发，3年以上python开发经验； \n2、有实际爬虫开发经验1年以上; 有逆向分析、反爬等相关经验；熟悉Proxy、PhantomJS、Selenium等相关技术\n3、精通信息抓取和整合技术，从结构化的和非结构化的数据中获取信息； \n4、熟悉分布式系统架构、高并发网络模型；熟练Mysql，redis，mongdb等数据库；\n5、优秀的分析问题和解决问题的能力，对解决具有挑战性问题充满激情； \n6、具有良好的沟通能力，和良好的团队合作精神。",
+    "responsibility": "负责通用自助爬取平台、分布式实时爬虫服务的架构设计与开发\n优化系统反爬、多渠道抓取和分析、内容提取等能力，从而提升抓取的效率和质量"
+}

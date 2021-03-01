@@ -1,0 +1,184 @@
+{
+    "机器学习实战": {
+        "书名": "机器学习实战",
+        "作者/译者": "Peter Harrington / 李锐 / 李鹏 / 曲亚东 / 王斌",
+        "出版社": "人民邮电出版社",
+        "出版时间": "2013-6",
+        "价格": "69.00元"
+    },
+    "Machine Learning with Spark": {
+        "书名": "Machine Learning with Spark",
+        "作者/译者": "Nick Pentreath",
+        "出版社": "Packt Publishing - ebooks Account",
+        "出版时间": "2014-12-8",
+        "价格": "USD 49.99"
+    },
+    "机器学习": {
+        "书名": "机器学习",
+        "作者/译者": "弗拉赫 (Peter Flach) / 段　菲",
+        "出版社": "人民邮电出版社",
+        "出版时间": "2016-1-1",
+        "价格": "CNY 79.00"
+    },
+    "Machine Learning in Python : Essential Techniques for Predictive Analysis": {
+        "书名": "Machine Learning in Python : Essential Techniques for Predictive Analysis",
+        "作者/译者": "Michael Bowles",
+        "出版社": "Wiley",
+        "出版时间": "2015-4-27",
+        "价格": "USD 50.00"
+    },
+    "Machine Learning : A Probabilistic Perspective": {
+        "书名": "Machine Learning : A Probabilistic Perspective",
+        "作者/译者": "Kevin Murphy",
+        "出版社": "The MIT Press",
+        "出版时间": "2012-9-18",
+        "价格": "USD 90.00"
+    },
+    "Machine Learning and Data Mining in Pattern Recognition : 4th International Conference, MLDM 2005, Leipzig, Germany, July": {
+        "书名": "Machine Learning and Data Mining in Pattern Recognition : 4th International Conference, MLDM 2005, Leipzig, Germany, July",
+        "作者/译者": "Petra Perner / Atsushi Imiya",
+        "出版社": "Springer",
+        "出版时间": "2008-6-13",
+        "价格": "GBP 117.00"
+    },
+    "Machine Learning in Action": {
+        "书名": "Machine Learning in Action",
+        "作者/译者": "Peter Harrington",
+        "出版社": "Manning Publications",
+        "出版时间": "2012-4-19",
+        "价格": "GBP 29.99"
+    },
+    "Machine Learning : An Algorithmic Perspective, Second Edition": {
+        "书名": "Machine Learning : An Algorithmic Perspective, Second Edition",
+        "作者/译者": "Stephen Marsland",
+        "出版社": "Chapman and Hall/CRC",
+        "出版时间": "2014-10-8",
+        "价格": "USD 79.95"
+    },
+    "机器学习 : 实用案例解析": {
+        "书名": "机器学习 : 实用案例解析",
+        "作者/译者": "（美）Drew Conway / John Myles White / 陈开江 / 刘逸哲 / 孟晓楠 / 罗森林 审校",
+        "出版社": "机械工业出版社",
+        "出版时间": "2013-4-1",
+        "价格": "69.00元"
+    },
+    "Machine Learning with R - Second Edition": {
+        "书名": "Machine Learning with R - Second Edition",
+        "作者/译者": "Brett Lantz",
+        "出版社": "Packt Publishing - ebooks Account",
+        "出版时间": "2015-8-3",
+        "价格": "USD 54.99"
+    },
+    "Spark机器学习": {
+        "书名": "Spark机器学习",
+        "作者/译者": "彭特里思 (Nick Pentreath) / 蔡立宇 / 黄章帅 / 周济民",
+        "出版社": "人民邮电出版社",
+        "出版时间": "2015-9-1",
+        "价格": "CNY 59.00"
+    },
+    "Machine Learning For Dummies": {
+        "书名": "Machine Learning For Dummies",
+        "作者/译者": "John Paul Mueller",
+        "出版社": "Luca Massaron",
+        "出版时间": "2016-5-31",
+        "价格": "USD 17.13"
+    },
+    "Machine Learning for Hackers": {
+        "书名": "Machine Learning for Hackers",
+        "作者/译者": "Drew Conway / John Myles White",
+        "出版社": "O'Reilly Media",
+        "出版时间": "2012-2-22",
+        "价格": "GBP 30.99"
+    },
+    "Machine Learning for Email : Spam Filtering and Priority Inbox": {
+        "书名": "Machine Learning for Email : Spam Filtering and Priority Inbox",
+        "作者/译者": "Drew Conway / John Myles White",
+        "出版社": "O'Reilly Media",
+        "出版时间": "2011-11-3",
+        "价格": "USD 24.99"
+    },
+    "Machine Learning": {
+        "书名": "Machine Learning",
+        "作者/译者": "Thomas Mitchell",
+        "出版社": "McGraw-Hill Education",
+        "出版时间": "1997-7-4",
+        "价格": "GBP 217.99"
+    },
+    "Machine Learning : An Artificial Intelligence Approach (Volume I)": {
+        "书名": "Machine Learning : An Artificial Intelligence Approach (Volume I)",
+        "作者/译者": "Ryszard S. Michalski / Jaime G. Carbonell / Tom M. Mitchell",
+        "出版社": "Morgan Kaufmann",
+        "出版时间": "1983.01",
+        "价格": "$91.95"
+    },
+    "Machine Learning : An Algorithmic Perspective": {
+        "书名": "Machine Learning : An Algorithmic Perspective",
+        "作者/译者": "Stephen Marsland",
+        "出版社": "Chapman and Hall/CRC",
+        "出版时间": "2009-4-8",
+        "价格": "GBP 52.99"
+    },
+    "Machine Learning In Computational Finance : Practical algorithms for building artificial intelligence applic": {
+        "书名": "Machine Learning In Computational Finance : Practical algorithms for building artificial intelligence applic",
+        "作者/译者": "Victor Boyarshinov",
+        "出版社": "LAP LAMBERT Academic Publishing",
+        "出版时间": "2012-5-14",
+        "价格": "USD 63.00"
+    },
+    "Machine Learning : The Art and Science of Algorithms that Make Sense of Data": {
+        "书名": "Machine Learning : The Art and Science of Algorithms that Make Sense of Data",
+        "作者/译者": "Peter Flach",
+        "出版社": "Cambridge University Press",
+        "出版时间": "2012-9-20",
+        "价格": "GBP 39.99"
+    },
+    "Machine Learning Refined : Foundations, Algorithms, and Applications": {
+        "书名": "Machine Learning Refined : Foundations, Algorithms, and Applications",
+        "作者/译者": "Jeremy Watt / Reza Borhani / Aggelos Katsaggelos",
+        "出版社": "Cambridge University Press",
+        "出版时间": "2016-10-17",
+        "价格": "USD 90.00"
+    },
+    "Machine Learning with R": {
+        "书名": "Machine Learning with R",
+        "作者/译者": "Brett Lantz",
+        "出版社": "Packt Publishing",
+        "出版时间": "2013-10-25",
+        "价格": "USD 54.99"
+    },
+    "Machine Learning With R Cookbook": {
+        "书名": "Machine Learning With R Cookbook",
+        "作者/译者": "Yu-Wei, Chiu (David Chiu)",
+        "出版社": "Packt Publishing - ebooks Account",
+        "出版时间": "2015-3-31",
+        "价格": "USD 59.99"
+    },
+    "Machine Learning with TensorFlow": {
+        "书名": "Machine Learning with TensorFlow",
+        "作者/译者": "Nishant Shukla",
+        "出版社": "Manning Publications",
+        "出版时间": "2017-1-31",
+        "价格": "GBP 34.72"
+    },
+    "Machine Learning Systems": {
+        "书名": "Machine Learning Systems",
+        "作者/译者": "Jeff Smith",
+        "出版社": "Manning Publications",
+        "出版时间": "2018-3-2",
+        "价格": "GBP 33.99"
+    },
+    "Machine Learning : A Bayesian and Optimization Perspective": {
+        "书名": "Machine Learning : A Bayesian and Optimization Perspective",
+        "作者/译者": "Sergios Theodoridis",
+        "出版社": "Academic Press",
+        "出版时间": "2015-4-10",
+        "价格": "USD 99.95"
+    },
+    "Machine Learning For Financial Engineering (Advances in Computer Science and Engineering : Texts)": {
+        "书名": "Machine Learning For Financial Engineering (Advances in Computer Science and Engineering : Texts)",
+        "作者/译者": "Laszlo Gyorfi",
+        "出版社": "Imperial College Press",
+        "出版时间": "2012-5-16",
+        "价格": "USD 95.00"
+    }
+}
