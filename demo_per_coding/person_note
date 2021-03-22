@@ -1,3 +1,6 @@
+# Person Note
+
+# mysql
 登录mysql mysql -u root -p 或 mysql
 
 use mysql;
@@ -7,8 +10,11 @@ flush privileges;
 exit;
 
 service mysql restart;
-
-
 update user set password=PASSWORD("密码") where user='root';
 
+# pip
 pip install 包名 -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
+
+
+# docker
+https://cloud.tencent.com/developer/article/1692504
