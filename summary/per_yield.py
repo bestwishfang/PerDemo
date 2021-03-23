@@ -18,6 +18,7 @@ def consumer():
 if __name__ == '__main__':
     p = producer()
     c = consumer()
-    c.__next__()
+    start = c.__next__()
+    print(f'c start: {start}')
     for j in p:
         c.send(j)
