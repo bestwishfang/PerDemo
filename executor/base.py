@@ -51,6 +51,7 @@ def upload_cases(repository):
         os.chdir(project_path)
         os.system('git pull')
     else:
+        os.makedirs(scripts_path)
         os.chdir(scripts_path)
         git_cmd = f'git clone {repository}'
         os.system(git_cmd)
