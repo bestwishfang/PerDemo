@@ -26,3 +26,72 @@ PasswordAuthentication yes （其他用户可以使用密码登录）
 4.最后一步很重要，使用root用户设置这两个文件的权限，防止普通用户篡改密钥文件
 chattr +i ~/.ssh/authorized_keys
 chattr +i ~/.ssh
+
+==========================================================================================
+# Python dict 更新，拼接 update()
+data = {}
+data.update({'a': 123})
+
+# python dis 模块， dis.dis() 将python代码 展示为 机器码
+
+
+In [1]: def foo():
+   ...:     a = '1'
+   ...:     b = '2'
+   ...:     b += a
+   ...:     return b
+   ...:
+
+In [2]: def bar():
+   ...:     a = '1'
+   ...:     b = '2'
+   ...:     b = b + a
+   ...:     return b
+   ...:
+
+
+In [3]: import dis
+
+
+In [4]: dis.dis(foo)
+  2           0 LOAD_CONST               1 ('1')
+              2 STORE_FAST               0 (a)
+
+  3           4 LOAD_CONST               2 ('2')
+              6 STORE_FAST               1 (b)
+
+  4           8 LOAD_FAST                1 (b)
+             10 LOAD_FAST                0 (a)
+             12 INPLACE_ADD
+             14 STORE_FAST               1 (b)
+
+  5          16 LOAD_FAST                1 (b)
+             18 RETURN_VALUE
+
+
+In [5]: dis.dis(bar)
+  2           0 LOAD_CONST               1 ('1')
+              2 STORE_FAST               0 (a)
+
+  3           4 LOAD_CONST               2 ('2')
+              6 STORE_FAST               1 (b)
+
+  4           8 LOAD_FAST                1 (b)
+             10 LOAD_FAST                0 (a)
+             12 BINARY_ADD
+             14 STORE_FAST               1 (b)
+
+  5          16 LOAD_FAST                1 (b)
+             18 RETURN_VALUE
+
+In [6]:
+
+第一列：对应的源代码行数。
+第二列：对应的内存字节码的索引位置。
+       在第一列和第二列之间的 >> 号表示跳转的目标
+第三列：内部机器代码的操作。
+第四列：指令参数。
+第五列：实际参数。
+
+===============================================================================
+
