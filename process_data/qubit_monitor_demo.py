@@ -3,7 +3,7 @@
 """
 __date:         2021/05/12
 __author:       ssfang
-__corporation:
+__corporation:  OriginQuantum
 __usage:
 
 """
@@ -78,10 +78,10 @@ def get_all_qubit_yaml(data_path, file_q):
         t.join()
 
 
-def plot_special(x, y, title, color, bit):
+def plot_special(x, y, title, ylabel, color, bit):
     plt.title(title)
     plt.xlabel('Time')
-    plt.ylabel(f'Value')
+    plt.ylabel(f'{ylabel}')
     plt.plot(x, y,
              marker='o',
              color=color,
@@ -110,28 +110,28 @@ def plot_operate(df, bit_list, save_path):
         new_index = index % len(color_list)
         plt.figure(figsize=(20, 24))
         plt.subplot(4, 2, 1)
-        plot_special(time_series, probe_freq_series, 'Probe Frequency', color_list[new_index], bit)
+        plot_special(time_series, probe_freq_series, 'Probe Frequency', 'Frequency(MHz)', color_list[new_index], bit)
 
         plt.subplot(4, 2, 2)
-        plot_special(time_series, drive_freq_series, 'Drive Frequency', color_list[new_index], bit)
+        plot_special(time_series, drive_freq_series, 'Drive Frequency', 'Frequency(MHz)', color_list[new_index], bit)
 
         plt.subplot(4, 2, 3)
-        plot_special(time_series, probe_power_series, 'Probe Power', color_list[new_index], bit)
+        plot_special(time_series, probe_power_series, 'Probe Power', 'Power(dB)', color_list[new_index], bit)
 
         plt.subplot(4, 2, 4)
-        plot_special(time_series, drive_power_series, 'Drive Power', color_list[new_index], bit)
+        plot_special(time_series, drive_power_series, 'Drive Power', 'Power(dB)', color_list[new_index], bit)
 
         plt.subplot(4, 2, 5)
-        plot_special(time_series, dc_max_series, 'Dc Max', color_list[new_index], bit)
+        plot_special(time_series, dc_max_series, 'Dc Max', 'Voltage(V)', color_list[new_index], bit)
 
         plt.subplot(4, 2, 6)
-        plot_special(time_series, dc_min_series, 'Dc Min', color_list[new_index], bit)
+        plot_special(time_series, dc_min_series, 'Dc Min', 'Voltage(V)', color_list[new_index], bit)
 
         plt.subplot(4, 2, 7)
-        plot_special(time_series, T1_series, 'T1', color_list[new_index], bit)
+        plot_special(time_series, T1_series, 'T1', 'Delay(ns)', color_list[new_index], bit)
 
         plt.subplot(4, 2, 8)
-        plot_special(time_series, T2_series, 'T2', color_list[new_index], bit)
+        plot_special(time_series, T2_series, 'T2', 'Delay(ns)', color_list[new_index], bit)
 
         # plt.show()
         time_str = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -141,6 +141,18 @@ def plot_operate(df, bit_list, save_path):
 
 
 def qubit_monitor(data_path, save_path, bit_list):
+    """
+    Monitor qubit some info,
+    monitor field : probe_freq, drive_freq,
+                    probe_power, drive_power,
+                    dc_max, dc_min,
+                    T1, T2
+    Args:
+        data_path (str): read data path, normal `config/exp.yaml` system.save_path
+        save_path (str): save png path, normal `config/exp.yaml` f'{system.save_path}/{system.chip_num}'
+        bit_list (list): list of bit, normal `config/exp.yaml` system.bit_list
+
+    """
     file_q = Queue()
     data_q = Queue()
     get_all_qubit_yaml(data_path, file_q)
@@ -165,7 +177,7 @@ def qubit_monitor(data_path, save_path, bit_list):
 
 
 if __name__ == '__main__':
-    data_path = r'E:\QubitData'  # exp.yaml system.save_path
-    save_path = r'E:\QubitData\0513'
+    data_path = r'D:\ssfang'  # exp.yaml system.save_path
+    save_path = r'D:\ssfang\D4-6bit_0512_dag_1'
     bit_list = [0, 1, 2, 3, 4, 5]  # exp.yaml system.bit_list
     qubit_monitor(data_path, save_path, bit_list)

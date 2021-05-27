@@ -1,3 +1,4 @@
+import re
 import time
 import logging
 from functools import wraps
@@ -159,3 +160,15 @@ def plot_dag(dag, png_name):
     # plt.show()
     fig.savefig(png_name)
     plt.close(fig)
+
+
+def some():
+    pattern = re.compile(r'^q(\d)_.*?yaml$')
+    yaml_path = r'D:\ssfang\data\qubit_info'
+    file_list = os.listdir(yaml_path)
+    for file in file_list:
+        print(file)
+        file_path = f'{yaml_path}/{file}'
+        bit = pattern.match(file).group(1)
+        qubit = Qubit(bit)
+        qubit.save_by_yaml(file_path)
