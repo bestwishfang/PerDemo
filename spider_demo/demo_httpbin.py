@@ -18,13 +18,18 @@ data = {
     },
 }
 
-ret_data = requests.post(url, data=data).json()
+
+headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36z",
+}
+
+ret_data = requests.post(url, data=data, headers=headers).json()
 
 print('ret data: ')
 pprint(ret_data)
 
 print('*' * 100)
-json_data = requests.post(url, json=data).json()
+json_data = requests.post(url, json=data, headers=headers).json()
 
 print('json data: ')
 pprint(json_data)
