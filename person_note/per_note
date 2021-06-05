@@ -116,3 +116,25 @@ val = nonlocal_test()
 print(val())
 print(val())
 print(val())
+
+
+RESTful API
+REST，是指REpresentational State Transfer，有个精辟的解释什么是RESTful：
+
+   看URL就知道要什么
+
+   看Method就知道干什么
+
+   看Status Code就知道结果如何
+
+良好的RESTful API设计的基本原则是：
+
+   返回JSON
+
+   严禁乱用状态码
+
+   处理好分页
+
+   返回具体的实体数据而不是返回通用的JSON数据
+
+   请求对象有默认值
