@@ -24,7 +24,8 @@ def statistics_time(func):
         else:
             bit_info = 'all'
             node = func.__name__
-        pyqlog.info(f'\n\n*********************Qubit {bit_info} execute {node} start...\n')
+        pyqlog.info(
+            f'\n\n*********************Qubit {bit_info} execute {node} start...\n')
         ret = func(*args, **kwargs)
         diff = time.time() - start
         pyqlog.info(f'\n\n*********************Qubit {bit_info} execute {node} end. '
@@ -32,7 +33,6 @@ def statistics_time(func):
         return ret
 
     return inner
-
 
 
 def whether_import_save(func):
@@ -80,7 +80,6 @@ def list_to_dict(node_list: list):
         schema = {k: v for k, v in zip(node_list, new_node_list)}
 
     return schema
-
 
 
 def make_graph(schema):
@@ -148,7 +147,8 @@ def make_graph(schema):
 
 def plot_dag(dag, png_name):
     fig, axs = plt.subplots(figsize=(36, 12))
-    labels = {k: '\n'.join(k.split('_')[:-1]) for k in nx.topological_sort(dag)}
+    labels = {k: '\n'.join(k.split('_')[:-1])
+              for k in nx.topological_sort(dag)}
     pos = {k: [i + 1, 6] for i, k in enumerate(nx.topological_sort(dag))}
     nx.draw(dag,
             pos=pos,
@@ -172,3 +172,19 @@ def some():
         bit = pattern.match(file).group(1)
         qubit = Qubit(bit)
         qubit.save_by_yaml(file_path)
+
+
+def get_z_amp():
+    # get z_amp
+    z_amp_list = []
+    diff_list = [60, 120, 180, 300, 300]
+    for diff in diff_list:
+        diff_freq = qubit.drive_freq - diff
+        z_amp = freq2amp_formula(diff_freq, *ac_spectrum_params)
+        z_amp_list.append(z_amp)
+
+    new_repeat_loops = np.array(repeat_loops)
+    new_repeat_loops[:, 1] = np.array(z_amp_list)
+    pyqlog.debug(f'Qubit {qubit.bit} z_amp_list: {z_amp_list}')
+    pyqlog.debug(f'repeat_loops: {repeat_loops}')
+    pyqlog.debug(f'new_repeat_loops: \n{new_repeat_loops}')

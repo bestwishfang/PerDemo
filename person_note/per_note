@@ -138,3 +138,41 @@ REST，是指REpresentational State Transfer，有个精辟的解释什么是RES
    返回具体的实体数据而不是返回通用的JSON数据
 
    请求对象有默认值
+
+
+# numpy.int64 not issubclass int
+# numpy.float64 issubclass float
+
+In [1]: import numpy as np
+
+In [2]: issubclass(np.float, float)
+Out[2]: True
+
+In [3]: issubclass(np.float16, float)
+Out[3]: False
+
+In [4]: issubclass(np.float32, float)
+Out[4]: False
+
+In [5]: issubclass(np.float64, float)
+Out[5]: True
+
+In [6]: issubclass(np.int, int)
+Out[6]: True
+
+In [7]: issubclass(np.int32, int)
+Out[7]: False
+
+In [8]: issubclass(np.int0, int)
+Out[8]: False
+
+In [9]: issubclass(np.int16, int)
+Out[9]: False
+
+In [10]: issubclass(np.int8, int)
+Out[10]: False
+
+In [11]: issubclass(np.int64, int)
+Out[11]: False
+
+In [12]:
