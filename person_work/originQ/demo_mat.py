@@ -1,12 +1,16 @@
 # -*- coding: utf-8 -*-
+
+import time
 import random
 
 import numpy as np
 import matplotlib.pyplot as plt
 
 
-def plot_double_dynamic(x1_list, y1_list, x2_list, y2_list, figures: tuple = None, x1_label=None, y1_label=None,
-                        x2_label=None, y2_label=None, title1=None, title2=None):
+def plot_double_dynamic(x1_list, y1_list, x2_list, y2_list, figures: tuple = None,
+                        x1_label=None, y1_label=None,
+                        x2_label=None, y2_label=None,
+                        title1=None, title2=None):
     if figures is None:
         figure, ax = plt.subplots(1, 2, figsize=(10, 5))
     else:
@@ -42,6 +46,21 @@ def producer(length):
         count += 1
 
 
+# def consumer(length, arr):
+#     count = 0
+#     y1_list = []
+#     y2_list = []
+#     figures = plt.subplots(2, 1, figsize=(6, 6))
+#     while count < length:
+#         y1, y2 = yield
+#         y1_list.append(y1)
+#         y2_list.append(y2)
+#         x_list = arr[: count + 1]
+#         plot_double_dynamic(x_list, y1_list, x_list, y2_list, figures=figures)
+#         count += 1
+#     plt.close()
+
+
 def consumer(length, arr):
     count = 0
     y1_list = []
@@ -51,15 +70,21 @@ def consumer(length, arr):
         y1, y2 = yield
         y1_list.append(y1)
         y2_list.append(y2)
-        x_list = arr[: count + 1]
-        # plot_double_dynamic(x_list, y1_list, x_list, y2_list, figures=figures)
+        if count > 0:
+            x_list = arr[count - 1: count + 1]
+            new_y1_list = y1_list[count - 1:]
+            new_y2_list = y2_list[count - 1:]
+            plot_double_dynamic(x_list, new_y1_list, x_list,
+                                new_y2_list, figures=figures)
+
         count += 1
     plt.close()
 
 
 if __name__ == '__main__':
 
-    length = 1000
+    start = time.time()
+    length = 200
     arr = np.arange(length)
     p = producer(length)
     c = consumer(length, arr)
@@ -70,3 +95,10 @@ if __name__ == '__main__':
         else:
             c.send((y1, y2))
         count += 1
+
+    print(f'time: {time.time() - start}')
+
+"""
+time: 47.987231731414795
+time: 14.652785301208496
+"""
