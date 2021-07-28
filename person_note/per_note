@@ -176,3 +176,34 @@ In [11]: issubclass(np.int64, int)
 Out[11]: False
 
 In [12]:
+
+
+# shell scripts run conda command
+
+
+#!/bin/bash
+if [ -f "/home/ai/anaconda3/etc/profile.d/conda.sh" ]; then
+    . "/home/ai/anaconda3/etc/profile.d/conda.sh"
+ else
+     export PATH="/home/ai/anaconda3/bin:$PATH"
+ fi
+conda activate py3
+nohup python gpu_beimianposun.py 11912 &
+
+
+
+# Internet Communication
+socket TCP, UDP
+ZeroMQ zmq
+Kafka kafka-python
+telnet telnetlib
+ssh paramiko
+
+pymysql 
+pymongo 
+redis 
+sqlalchemy 
+mongoengine
+
+
+
